@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Parallax Scrolling Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#section1">Section 1</a></li>
+      <li><a href="#section2">Section 2</a></li>
+      <li><a href="#section3">Section 3</a></li>
+    </ul>
+  </nav>
+
+  <header id="home">
+    <h1>Welcome to My Interactive Parallax Website</h1>
+    <p>Scroll down or use the navigation to explore!</p>
+    <button onclick="scrollToSection('section1')">Explore More</button>
+  </header>
+
+  <section class="parallax-section" id="section1">
+    <div class="content">
+      <h2>Section 1</h2>
+      <p>This is the first parallax section with interactive effects.</p>
+      <button onclick="scrollToSection('section2')">Next Section</button>
+    </div>
+  </section>
+
+  <section class="parallax-section" id="section2">
+    <div class="content">
+      <h2>Section 2</h2>
+      <p>This is the second parallax section with interactive effects.</p>
+      <button onclick="scrollToSection('section3')">Next Section</button>
+    </div>
+  </section>
+
+  <section class="parallax-section" id="section3">
+    <div class="content">
+      <h2>Section 3</h2>
+      <p>This is the third parallax section with interactive effects.</p>
+      <button onclick="scrollToSection('home')">Back to Top</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Interactive Parallax Website. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
